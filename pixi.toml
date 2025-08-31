@@ -20,7 +20,7 @@ scikit-learn = ">=1.7.1,<2"
 pytables = ">=3.10.2,<4"
 matplotlib-base = ">=3.10.5,<4"
 mplhep = ">=0.4.1,<0.5"
-numpy = ">=2.3.2,<3"
+numpy = ">=2.2.6,<3"
 scipy = ">=1.16.1,<2"
 pandas = ">=2.3.2,<3"
 awkward = ">=2.8.7,<3"
@@ -31,9 +31,16 @@ cudnn = "9.*"
 onnx = ">=1.17.0,<2"
 onnxruntime = ">=1.22.0,<2"
 pyarrow = ">=19.0.1,<20"
+coffea = ">=2025.7.3,<2026"
 
 [feature.gpu.pypi-dependencies]
 nsbi-common-utils = { path = ".", editable = true}
 
+[feature.lab.dependencies]
+notebook = "*"
+jupyterlab = "*"
+pixi-kernel = ">=0.6.6,<0.7"
+
 [environments]
 gpu = { features = ["gpu"], no-default-feature = true }
+lab = { features = ["gpu", "lab"], no-default-feature = true }
