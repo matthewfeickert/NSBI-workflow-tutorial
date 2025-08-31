@@ -192,3 +192,6 @@ cached_data/
 
 # Ignore library version files
 src/nsbi_common_utils/_version.py
+# pixi environments
+.pixi/*
+!.pixi/config.toml
