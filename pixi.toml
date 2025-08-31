@@ -36,4 +36,4 @@ pyarrow = ">=19.0.1,<20"
 nsbi-common-utils = { path = ".", editable = true}
 
 [environments]
-nsbi-env-gpu = { features = ["gpu"], no-default-feature = true }
+gpu = { features = ["gpu"], no-default-feature = true }
