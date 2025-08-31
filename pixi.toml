@@ -10,7 +10,7 @@ version = "0.1.0"
 python = ">=3.13.5,<3.14"
 
 [feature.gpu.system-requirements]
-cuda = "12.6"
+cuda = "12.5"
 
 [feature.gpu.dependencies]
 python = ">=3.12.11,<3.13"
@@ -26,7 +26,7 @@ pandas = ">=2.3.2,<3"
 awkward = ">=2.8.7,<3"
 pixi-kernel = ">=0.6.6,<0.7"
 tensorflow-gpu = "2.18.*"
-cuda-version = "==12.6"
+cuda-version = "12.6.*"
 cudnn = "9.*"
 onnx = ">=1.17.0,<2"
 onnxruntime = ">=1.22.0,<2"
